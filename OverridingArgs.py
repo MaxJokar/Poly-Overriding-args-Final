@@ -2,7 +2,7 @@
 
 # from multipledispatch import dispatch 
 
-#========FOR Interger Numbers==============================
+#========FOR Interger Numbers: with different amount of arguments==============================
 # @dispatch(int,int)
 # def sum(a,b):
 #          return a+b
@@ -15,13 +15,21 @@
 # print(sum(20,20,100))
 
 
-#=========================================================
+#====================*args for unlimited amount  of arguments=====================================
 def sum1(*args):
     s=0
     for item in args:
        s+=item  
     return s
 print(sum1(20,45,58,89))
+print(sum1(20,45,58,89,200))
+print(sum1(20,45,58,89,500,789))
+
+
+
+
+
+
 
 
 #========FOR  STRING ==============================
